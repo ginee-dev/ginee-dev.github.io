@@ -13,14 +13,124 @@ body {
     box-sizing: border-box;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.85rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.iconify {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.25rem!important;
+}
+
+.iconify-lg {
+    width: 2rem;
+    height: 2rem;
+}
+
 /* Layout ============================================== */
 
 .position-relative {
     position: relative!important;
 }
 
+.mx-hr {
+    margin-left: -1.5rem;
+    margin-right: -3rem;
+}
+
 .ml-auto {
     margin-left: auto;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.d-none {
+    display: none!important;
+}
+
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block!important;
+    }
+}
+
+/* Image ============================================== */
+
+.img-skewed {
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.img-skewed-right {
+    -webkit-perspective-origin: right center;
+    perspective-origin: right center;
+}
+
+.img-skewed-left {
+    -webkit-perspective-origin: left center;
+    perspective-origin: left center;
+}
+
+.img-skewed-right .img-skewed-item {
+    -webkit-transform: rotateY( 35deg) rotateX( 15deg);
+    transform: rotateY( 35deg) rotateX( 15deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.img-skewed-left .img-skewed-item {
+    -webkit-transform: rotateY( -30deg) rotateX( 5deg);
+    transform: rotateY( -30deg) rotateX( 5deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.screenshot {
+    border-radius: .625rem;
+    box-shadow: 25px 60px 125px -25px rgb(80 102 144 / 10%), 16px 40px 75px -40px rgb(0 0 0 / 20%);
+}
+
+.card-header:first-child {
+    border-radius: calc(.375rem - 0px) calc(.375rem - 0px) 0 0;
+}
+
+.card-header {
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    border-bottom: 1px solid #f1f4f8;
+}
+
+.card-body, .card-footer, .card-img, .card-img-left, .card-img-right, .card-img-top, .card-meta {
+    position: relative;
+    min-height: 1px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Code ============================================== */
+
+code {
+    line-height: 1.35;
 }
 
 /* Border ============================================== */
@@ -31,6 +141,14 @@ body {
 
 .border-bottom {
     border-bottom: 1px solid #f1f4f8!important;
+}
+
+.border-gray-900-50 {
+    border-color: rgba(27, 42, 78, .5)!important;
+}
+
+.border-white-10 {
+    border-color: rgba(255, 255, 255, .1)!important;
 }
 
 /* Shape ============================================== */
@@ -96,6 +214,10 @@ svg {
 
 /* Text ============================================== */
 
+.text-reset {
+    color: inherit!important;
+}
+
 .text-brand {
     font-family: 'Arvo', serif;
 }
@@ -108,10 +230,30 @@ svg {
     color: #161c2d!important;
 }
 
+.text-blue {
+    color: #335eea!important;
+}
+
+.text-muted-80 {
+    color: rgba(134, 154, 184, .8)!important;
+}
+
+.text-gray-700 {
+    color: #506690!important;
+}
+
 /* Colors ============================================== */
 
 .bg-white {
     background-color: #fff!important;
+}
+
+.bg-blue {
+    background-color: #335eea!important;
+}
+
+.bg-black {
+    background-color: #161c2d!important;
 }
 
 /* Navbar ============================================== */
@@ -120,17 +262,21 @@ svg {
     padding: 1.25rem 1rem;
 }
 
-.navbar-brand-img {
+.navbar-brand-img, .footer-brand {
     max-height: 2rem;
     width: auto;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #335eea;
+}
+
 .navbar-light .navbar-nav .nav-link {
-    color: gray;
+    color: #506690;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: black;
+    color: #335eea;
 }
 
 @media (min-width: 992px) {
@@ -155,6 +301,35 @@ svg {
 .btn-white {
     background-color: #fff;
     color: black;
+}
+
+.btn-blue {
+    background-color: #335eea;
+    color: #fff;
+}
+
+.btn-rounded-circle {
+    padding-left: .8125rem;
+    padding-right: .8125rem;
+    border-radius: 50rem;
+}
+
+.btn-rounded-circle>* {
+    display: block;
+    line-height: 1;
+    width: 1em;
+}
+
+.btn-gray-400-10 {
+    background-color: rgba(198, 211, 230, .1);
+    color: #fff;
+}
+
+.badge-rounded-circle {
+    height: calc(1em + .5rem);
+    padding-left: .25rem;
+    padding-right: .25rem;
+    border-radius: 10rem;
 }
 
 /* Shadow ============================================== */
