@@ -325,6 +325,15 @@ svg {
     color: #fff;
 }
 
+.btn-gray-400-30 {
+    background-color: rgba(198, 211, 230, .3);
+    color: #fff;
+}
+
+a.btn-gray-400-30:hover {
+    color: #fff;
+}
+
 .badge-rounded-circle {
     height: calc(1em + .5rem);
     padding-left: .25rem;
