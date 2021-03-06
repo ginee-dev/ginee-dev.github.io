@@ -4,6 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="./assets/img/icon.png" />
 
         <!-- Bootstrap CSS -->
         <link
@@ -32,11 +33,43 @@
         <!-- Iconify JS -->
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-        <title>Home | Ginee</title>
+        <script type="text/javascript">
+            function copyToClipboard(text) {
+                var input = document.body.appendChild(
+                    document.createElement('input')
+                );
+                input.value = text;
+                input.focus();
+                input.select();
+                document.execCommand('copy');
+                input.parentNode.removeChild(input);
+            }
+        </script>
+
+        <title>Open Position | Ginee</title>
     </head>
 
     <body>
-        <!-- MODALS ===================================================================== -->
+        <!-- TOAST ===================================================================== -->
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
+            <div
+                id="copyMessage"
+                class="toast align-items-center bg-blue"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+            >
+                <div class="d-flex">
+                    <div class="toast-body">Link copied to clipboard.</div>
+                    <button
+                        type="button"
+                        class="btn-close me-2 m-auto text-light"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                    ></button>
+                </div>
+            </div>
+        </div>
         <!-- NAVBAR ===================================================================== -->
         <nav
             class="navbar navbar-expand-lg navbar-light bg-white border-bottom"
@@ -122,10 +155,20 @@
                     </div>
                     <div class="col-auto">
                         <!-- Buttons -->
-                        <a href="#!" class="btn btn-blue-soft mr-1 lift">
-                            Refer a friend
+                        <a
+                            href="#!"
+                            class="btn btn-blue-soft mr-1 lift"
+                            onclick="copyToClipboard(window.location.href); $('#copyMessage').toast('show');"
+                        >
+                            Share
                         </a>
-                        <a href="#!" class="btn btn-blue lift"> Apply </a>
+                        <a
+                            href="https://forms.gle/bMTZMiQv2PsaUHVr9"
+                            class="btn btn-blue lift"
+                            target="_blank"
+                        >
+                            Apply
+                        </a>
                     </div>
                 </div>
                 <!-- / .row -->
@@ -545,9 +588,9 @@
                                 <!-- Text -->
                                 <p class="font-size-sm mb-0">
                                     <a
-                                        href="mailto:ginee.dev@gmail.com"
+                                        href="mailto:help@ginee.dev"
                                         class="text-reset"
-                                        >ginee.dev@gmail.com</a
+                                        >help@ginee.dev</a
                                     >
                                 </p>
                             </div>
@@ -568,7 +611,8 @@
 
                                 <!-- Heading -->
                                 <a
-                                    href="#!"
+                                    href="https://forms.gle/kq3Ff98112Yd3CrA8"
+                                    target="_blank"
                                     class="font-size-sm text-decoration-none"
                                 >
                                     Let us know &RightArrow;
@@ -603,6 +647,12 @@
             </div>
             <!-- / .container -->
         </footer>
+
+        <!-- Jquery JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+            crossorigin="anonymous"
+        ></script>
 
         <!-- Bootstrap Bundle with Popper -->
         <script
