@@ -294,6 +294,10 @@ svg {
     border-bottom: none !important;
 }
 
+.table>tbody a:hover {
+    text-decoration: underline !important;
+}
+
 th {
     text-align: inherit;
     text-align: -webkit-match-parent;
