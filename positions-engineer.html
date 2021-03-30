@@ -1,664 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="assets/img/icon.png" />
-
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-            crossorigin="anonymous"
-        />
-
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- AOS Libarary CSS -->
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
-
-        <!-- Theme CSS -->
-        <link href="assets/css/theme.css" rel="stylesheet" />
-
-        <!-- Iconify JS -->
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-        <script type="text/javascript">
-            function copyToClipboard(text) {
-                var input = document.body.appendChild(
-                    document.createElement('input')
-                );
-                input.value = text;
-                input.focus();
-                input.select();
-                document.execCommand('copy');
-                input.parentNode.removeChild(input);
-            }
-        </script>
-
-        <title>Open Position | Ginee</title>
-    </head>
-
-    <body>
-        <!-- TOAST ===================================================================== -->
-        <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
-            <div
-                id="copyMessage"
-                class="toast align-items-center bg-blue fade hide"
-                role="alert"
-                aria-live="assertive"
-                aria-atomic="true"
-            >
-                <div class="d-flex">
-                    <div class="toast-body">Link copied to clipboard.</div>
-                    <button
-                        type="button"
-                        class="btn-close me-2 m-auto text-light"
-                        data-bs-dismiss="toast"
-                        aria-label="Close"
-                    ></button>
-                </div>
-            </div>
-        </div>
-        <!-- NAVBAR ===================================================================== -->
-        <nav
-            class="navbar navbar-expand-lg navbar-light bg-white border-bottom"
-        >
-            <div class="container-fluid">
-                <!-- Brand -->
-                <a class="navbar-brand" href="./index.html">
-                    <img
-                        src="assets/img/ginee.svg"
-                        class="navbar-brand-img"
-                        alt="Ginee"
-                    />
-                </a>
-
-                <!-- Mobile -->
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                aria-current="page"
-                                href="./index.html"
-                                >Home</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                aria-current="page"
-                                href="./careers.html"
-                                >Careers</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                aria-current="page"
-                                href="./about-us.html"
-                                >About Us</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <!-- / .navbar-collapse -->
-            </div>
-            <!-- / .container-fluid -->
-        </nav>
-        <!-- CONTENT ======================================================================= -->
-        <section class="py-3 py-md-5 bg-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md">
-                        <!-- Link -->
-                        <a
-                            href="./careers.html"
-                            class="font-weight-bold font-size-sm text-decoration-none mb-3"
-                        >
-                            &LeftArrow; All Openings
-                        </a>
-
-                        <!-- Heading -->
-                        <h1 class="display-4 mb-2">Engineer</h1>
-
-                        <!-- Text -->
-                        <p class="font-size-lg text-gray-700 mb-5 mb-md-0">
-                            Bengaluru, India · Permanent · Full time
-                        </p>
-                    </div>
-                    <div class="col-auto">
-                        <!-- Buttons -->
-                        <a
-                            href="#!"
-                            class="btn btn-blue-soft mr-1 lift"
-                            onclick="copyToClipboard(window.location.href); $('#copyMessage').toast('show');"
-                        >
-                            Share
-                        </a>
-                        <a
-                            href="https://forms.gle/bMTZMiQv2PsaUHVr9"
-                            class="btn btn-blue lift"
-                            target="_blank"
-                        >
-                            Apply
-                        </a>
-                    </div>
-                </div>
-                <!-- / .row -->
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Divider -->
-                        <hr class="my-3 my-md-5 border-gray-300" />
-                    </div>
-                </div>
-                <!-- / .row -->
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <!-- Heading ===================================================================== -->
-                        <h3>What we're looking for</h3>
-
-                        <!-- Text -->
-                        <p class="text-gray-800 mb-3 mb-md-5">
-                            We are searching for a detail-orientated,
-                            deadline-driven Engineer to join our growing team.
-                        </p>
-                        <p class="text-gray-800 mb-3 mb-md-5">
-                            To be successful as an Engineer, you should be
-                            knowledgeable about Flutter and Firebase.
-                            Ultimately, an outstanding Engineer will exhibit
-                            resourcefulness, teamwork, and collaboration skills.
-                        </p>
-
-                        <!-- Heading ===================================================================== -->
-                        <h3 class="mb-3">Roles and Responsibilities</h3>
-                        <!-- List -->
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Researching, designing, implementing efficient
-                                code which adheres to the relevant professional
-                                standards.
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Testing and evaluating applications.
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Enhancing applications by identifying
-                                opportunities for improvement, making
-                                recommendations and designing and subsequently
-                                implementing these enhancements.
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Determining operational practicality
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Developing quality assurance procedures
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Maintaining and upgrading existing applications
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800 mb-3 mb-md-5">
-                                Working closely with other developers, UX
-                                designers and business analysts
-                            </p>
-                        </div>
-
-                        <!-- Heading ===================================================================== -->
-                        <h3 class="mb-3">Applicant requirements</h3>
-
-                        <!-- List -->
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Atleast 2 years of development experience with
-                                Flutter & Firebase
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                An Associate's degree in Engineering or similar
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                A Bachelor's degree in Computer Science &
-                                Engineering is preferred
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                The ability to remain professional under
-                                pressure
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">An analytical mind</p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Commercial and business awareness
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Attention to detail and desire to probe further
-                                into data
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Good communication skills – both written and
-                                verbal
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800 mb-3 mb-md-5">
-                                Superb work ethic and a growth mindset
-                            </p>
-                        </div>
-
-                        <!-- Heading ===================================================================== -->
-                        <h3 class="mb-3">Desired Skills</h3>
-
-                        <!-- List -->
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Proficiency with Firesbase
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800">
-                                Extensive experience in e-commerce domain.
-                            </p>
-                        </div>
-                        <div class="d-flex">
-                            <!-- Badge -->
-
-                            <div
-                                class="badge badge-rounded-circle text-success"
-                            >
-                                <span
-                                    class="iconify"
-                                    data-icon="bx:bxs-check-circle"
-                                    data-inline="false"
-                                ></span>
-                            </div>
-
-                            <!-- Text -->
-                            <p class="text-gray-800 mb-3 mb-md-5">
-                                Impressive problem solving skills
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- SIDE ===================================================================== -->
-                    <div class="col-12 col-md-4">
-                        <!-- Card -->
-                        <div class="card shadow-light-lg mb-5">
-                            <div class="card-body">
-                                <!-- Heading ===================================================================== -->
-                                <h4>Need help?</h4>
-
-                                <!-- Text -->
-                                <p class="font-size-sm text-gray-800 mb-5">
-                                    Not sure exactly what we're looking for or
-                                    want clarification? We'd be happy to chat
-                                    with you and clear things up for you.
-                                    Anytime!
-                                </p>
-
-                                <!-- Heading ===================================================================== -->
-                                <h6
-                                    class="font-weight-bold text-uppercase text-gray-700 mb-2"
-                                >
-                                    Email us
-                                </h6>
-
-                                <!-- Text -->
-                                <p class="font-size-sm mb-0">
-                                    <a
-                                        href="mailto:help@ginee.dev"
-                                        class="text-reset"
-                                        >help@ginee.dev</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card -->
-                        <div class="card shadow-light-lg">
-                            <div class="card-body">
-                                <!-- Heading -->
-                                <h4>Don't see a job for you?</h4>
-
-                                <!-- Text -->
-                                <p class="font-size-sm text-gray-800">
-                                    Do you feel like you belong to Ginee, but we
-                                    don't have your dream job posted? No
-                                    problem, reach out.
-                                </p>
-
-                                <!-- Heading -->
-                                <a
-                                    href="https://forms.gle/kq3Ff98112Yd3CrA8"
-                                    target="_blank"
-                                    class="font-size-sm text-decoration-none"
-                                >
-                                    Let us know &RightArrow;
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- / .row -->
-            </div>
-            <!-- / .container -->
-        </section>
-        <!-- FOOTER ===================================================================== -->
-        <footer class="py-3 py-md-5 bg-black">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <!-- Brand -->
-                        <img
-                            src="assets/img/ginee-gray.svg"
-                            alt="Ginee"
-                            class="footer-brand img-fluid mb-2 text-blue"
-                        />
-
-                        <!-- Text -->
-                        <p class="text-gray-700">
-                            Gateway to serverless eCommerce solutions.
-                        </p>
-                    </div>
-                </div>
-                <!-- / .row -->
-            </div>
-            <!-- / .container -->
-        </footer>
-
-        <!-- Jquery JS -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
-            crossorigin="anonymous"
-        ></script>
-
-        <!-- Bootstrap Bundle with Popper -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="assets/img/icon.png" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- AOS Libarary CSS -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Theme CSS -->
+		<link href="assets/css/theme.css" rel="stylesheet" />
+
+		<!-- Iconify JS -->
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+		<script type="text/javascript">
+			function copyToClipboard(text) {
+				var input = document.body.appendChild(
+					document.createElement('input')
+				);
+				input.value = text;
+				input.focus();
+				input.select();
+				document.execCommand('copy');
+				input.parentNode.removeChild(input);
+			}
+		</script>
+
+		<title>Open Position | Ginee</title>
+	</head>
+
+	<body>
+		<!-- TOAST ===================================================================== -->
+		<div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
+			<div
+				id="copyMessage"
+				class="toast align-items-center bg-blue fade hide"
+				role="alert"
+				aria-live="assertive"
+				aria-atomic="true"
+			>
+				<div class="d-flex">
+					<div class="toast-body">Link copied to clipboard.</div>
+					<button
+						type="button"
+						class="btn-close me-2 m-auto text-light"
+						data-bs-dismiss="toast"
+						aria-label="Close"
+					></button>
+				</div>
+			</div>
+		</div>
+		<!-- NAVBAR ===================================================================== -->
+		<nav
+			class="navbar navbar-expand-lg navbar-light bg-white border-bottom"
+		>
+			<div class="container-fluid">
+				<!-- Brand -->
+				<a class="navbar-brand" href="./index.html">
+					<img
+						src="assets/img/ginee.svg"
+						class="navbar-brand-img"
+						alt="Ginee"
+					/>
+				</a>
+
+				<!-- Mobile -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								aria-current="page"
+								href="./index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								aria-current="page"
+								href="./careers.html"
+								>Careers</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								aria-current="page"
+								href="./about-us.html"
+								>About Us</a
+							>
+						</li>
+					</ul>
+				</div>
+				<!-- / .navbar-collapse -->
+			</div>
+			<!-- / .container-fluid -->
+		</nav>
+		<!-- CONTENT ======================================================================= -->
+		<section class="py-3 py-md-5 bg-light">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-md">
+						<!-- Link -->
+						<a
+							href="./careers.html"
+							class="font-weight-bold font-size-sm text-decoration-none mb-3"
+						>
+							&LeftArrow; All Openings
+						</a>
+
+						<!-- Heading -->
+						<h1 class="display-4 mb-2">Engineer</h1>
+
+						<!-- Text -->
+						<p class="font-size-lg text-gray-700 mb-5 mb-md-0">
+							Bengaluru, India · Permanent · Full time
+						</p>
+					</div>
+					<div class="col-auto">
+						<!-- Buttons -->
+						<a
+							href="#!"
+							class="btn btn-blue-soft mr-1 lift"
+							onclick="copyToClipboard(window.location.href); $('#copyMessage').toast('show');"
+						>
+							Share
+						</a>
+						<a
+							href="https://forms.gle/bMTZMiQv2PsaUHVr9"
+							class="btn btn-blue lift"
+							target="_blank"
+						>
+							Apply
+						</a>
+					</div>
+				</div>
+				<!-- / .row -->
+				<div class="row">
+					<div class="col-12">
+						<!-- Divider -->
+						<hr class="my-3 my-md-5 border-gray-300" />
+					</div>
+				</div>
+				<!-- / .row -->
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<!-- Heading ===================================================================== -->
+						<h3>What we're looking for</h3>
+
+						<!-- Text -->
+						<p class="text-gray-800 mb-3 mb-md-5">
+							We are searching for a detail-orientated,
+							deadline-driven Engineer to join our growing team.
+						</p>
+						<p class="text-gray-800 mb-3 mb-md-5">
+							To be successful as an Engineer, you should be
+							knowledgeable about Flutter and Firebase.
+							Ultimately, an outstanding Engineer will exhibit
+							resourcefulness, teamwork, and collaboration skills.
+						</p>
+
+						<!-- Heading ===================================================================== -->
+						<h3 class="mb-3">Roles and Responsibilities</h3>
+						<!-- List -->
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Researching, designing, implementing efficient
+								code which adheres to the relevant professional
+								standards.
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Testing and evaluating applications.
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Enhancing applications by identifying
+								opportunities for improvement, making
+								recommendations and designing and subsequently
+								implementing these enhancements.
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Determining operational practicality
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Developing quality assurance procedures
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Maintaining and upgrading existing applications
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800 mb-3 mb-md-5">
+								Working closely with other developers, UX
+								designers and business analysts
+							</p>
+						</div>
+
+						<!-- Heading ===================================================================== -->
+						<h3 class="mb-3">Applicant requirements</h3>
+
+						<!-- List -->
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Atleast 2 years of development experience with
+								Flutter & Firebase
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								An Associate's degree in Engineering or similar
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								A Bachelor's degree in Computer Science &
+								Engineering is preferred
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								The ability to remain professional under
+								pressure
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">An analytical mind</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Commercial and business awareness
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Attention to detail and desire to probe further
+								into data
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Good communication skills – both written and
+								verbal
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800 mb-3 mb-md-5">
+								Superb work ethic and a growth mindset
+							</p>
+						</div>
+
+						<!-- Heading ===================================================================== -->
+						<h3 class="mb-3">Desired Skills</h3>
+
+						<!-- List -->
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Proficiency with Firesbase
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800">
+								Extensive experience in e-commerce domain.
+							</p>
+						</div>
+						<div class="d-flex">
+							<!-- Badge -->
+
+							<div
+								class="badge badge-rounded-circle text-success"
+							>
+								<span
+									class="iconify"
+									data-icon="bx:bxs-check-circle"
+									data-inline="false"
+								></span>
+							</div>
+
+							<!-- Text -->
+							<p class="text-gray-800 mb-3 mb-md-5">
+								Impressive problem solving skills
+							</p>
+						</div>
+					</div>
+
+					<!-- SIDE ===================================================================== -->
+					<div class="col-12 col-md-4">
+						<!-- Card -->
+						<div class="card shadow-light-lg mb-5">
+							<div class="card-body">
+								<!-- Heading ===================================================================== -->
+								<h4>Need help?</h4>
+
+								<!-- Text -->
+								<p class="font-size-sm text-gray-800 mb-5">
+									Not sure exactly what we're looking for or
+									want clarification? We'd be happy to chat
+									with you and clear things up for you.
+									Anytime!
+								</p>
+
+								<!-- Heading ===================================================================== -->
+								<h6
+									class="font-weight-bold text-uppercase text-gray-700 mb-2"
+								>
+									Email us
+								</h6>
+
+								<!-- Text -->
+								<p class="font-size-sm mb-0">
+									<a
+										href="mailto:help@ginee.dev"
+										class="text-reset"
+										>help@ginee.dev</a
+									>
+								</p>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card shadow-light-lg">
+							<div class="card-body">
+								<!-- Heading -->
+								<h4>Don't see a job for you?</h4>
+
+								<!-- Text -->
+								<p class="font-size-sm text-gray-800">
+									Do you feel like you belong to Ginee, but we
+									don't have your dream job posted? No
+									problem, reach out.
+								</p>
+
+								<!-- Heading -->
+								<a
+									href="https://forms.gle/kq3Ff98112Yd3CrA8"
+									target="_blank"
+									class="font-size-sm text-decoration-none"
+								>
+									Let us know &RightArrow;
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / .row -->
+			</div>
+			<!-- / .container -->
+		</section>
+		<!-- FOOTER ===================================================================== -->
+		<footer class="py-3 py-md-5 bg-black">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12">
+						<!-- Brand -->
+						<a href="./index.html">
+							<img
+								src="assets/img/ginee-gray.svg"
+								alt="Ginee"
+								class="footer-brand img-fluid mb-2 text-blue"
+							/>
+						</a>
+
+						<!-- Text -->
+						<p class="text-gray-700">
+							Gateway to serverless eCommerce solutions.
+						</p>
+					</div>
+				</div>
+				<!-- / .row -->
+			</div>
+			<!-- / .container -->
+		</footer>
+
+		<!-- Jquery JS -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
